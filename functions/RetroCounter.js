@@ -23,7 +23,7 @@ function initializeClock(id, endtime) {
     var t = getTimeRemaining(endtime);
 
     if (t.total <= 0) {
-      document.getElementById("clockdiv").className = "hidden-div";
+      document.getElementById(id).className = "hidden-div";
       document.getElementById("timeIsNow").className = "visible-div";
       clearInterval(timeinterval);
       return true;
