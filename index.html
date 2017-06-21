@@ -1,0 +1,69 @@
+<html>
+    <head>    
+	<script type="text/javascript" src="http://localhost/conteo/functions/RetroCounter.js"></script>
+                 <style>
+        body{
+    text-align: center;
+    background: #00ECB9;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+h1{
+  color: #396;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+.hidden-div {
+  visibility: hidden;
+}
+.visible-div {
+  visibility: visible;
+}
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+                </style>
+            </head>
+            <body>
+                <h1>Countdown Clock</h1>
+
+                <div id="clockdiv" class="visible-div">
+                    <span class="days"></span> Days
+                    <span class="hours"></span> Hours
+                    <span class="minutes"></span> Minutes
+                    <span class="seconds"></span> Seconds
+                </div>
+      <script type="text/javascript">
+                
+var deadline = '2018-05-05';
+
+initializeClock('clockdiv', deadline);
+      </script>
+            </body>    
+        </html>
