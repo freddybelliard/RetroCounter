@@ -28,7 +28,12 @@ function initializeClock(id, endtime) {
       document.getElementById("show-content").className = "visible-div";    
       clearInterval(timeinterval);
       return true;
-    }
+    }else{
+      if (document.getElementById(id).className != "hidden-div")
+	      document.getElementById(id).className = "hidden-div";
+      if (document.getElementById("show-content").className != "visible-div")
+	      document.getElementById("show-content").className = "visible-div";
+    }	    
   daysSpan.innerHTML = t.days;
     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
