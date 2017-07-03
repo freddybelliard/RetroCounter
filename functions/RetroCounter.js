@@ -29,10 +29,10 @@ function initializeClock(id, endtime) {
       clearInterval(timeinterval);
       return true;
     }else{
-      if (document.getElementById(id).className != "hidden-div")
-	      document.getElementById(id).className = "hidden-div";
-      if (document.getElementById("show-content").className != "visible-div")
-	      document.getElementById("show-content").className = "visible-div";
+      if (document.getElementById(id).className != "visible-div")
+	      document.getElementById(id).className = "visible-div";
+      if (document.getElementById("show-content").className != "hidden-div")
+	      document.getElementById("show-content").className = "hidden-div";
     }	    
   daysSpan.innerHTML = t.days;
     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
