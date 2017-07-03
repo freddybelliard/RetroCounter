@@ -24,7 +24,8 @@ function initializeClock(id, endtime) {
 
     if (t.total <= 0) {
       document.getElementById(id).className = "hidden-div";
-      document.getElementById("timeIsNow").className = "visible-div";
+      document.getElementById("post-body-5161575185185621837").className = "visible-div";
+      document.getElementById("show-content").className = "visible-div";    
       clearInterval(timeinterval);
       return true;
     }
